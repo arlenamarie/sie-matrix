@@ -1,0 +1,1604 @@
+{
+  "Products": {
+    "columns": [
+      "Product Name",
+      "Category",
+      "Issuer Type",
+      "Income Type",
+      "Risk Level",
+      "Tax Treatment",
+      "Settlement",
+      "Key Reg / Act",
+      "Trading Venue",
+      "Notes / Mnemonics"
+    ],
+    "rows": [
+      {
+        "Product Name": "Common Stock",
+        "Category": "Equity",
+        "Issuer Type": "Corporation",
+        "Income Type": "Dividends (qualified)",
+        "Risk Level": "High (market risk, no upside cap)",
+        "Tax Treatment": "Qualified div rate (0/15/20%); LT cap gains",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Securities Act 1933 (issue); Exchange Act 1934 (trading)",
+        "Trading Venue": "Exchange or OTC",
+        "Notes / Mnemonics": "Voting rights. Last in line at liquidation. No maturity."
+      },
+      {
+        "Product Name": "Preferred Stock",
+        "Category": "Equity",
+        "Issuer Type": "Corporation",
+        "Income Type": "Fixed dividends (stated rate)",
+        "Risk Level": "Moderate (interest-rate sensitive)",
+        "Tax Treatment": "Qualified div rate",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Securities Act 1933 / Exchange Act 1934",
+        "Trading Venue": "Exchange or OTC",
+        "Notes / Mnemonics": "Usually NO voting rights. Senior to common in liquidation. Acts like a bond — price moves inverse to rates."
+      },
+      {
+        "Product Name": "ADRs",
+        "Category": "Equity",
+        "Issuer Type": "Foreign corp via US bank",
+        "Income Type": "Dividends (when paid)",
+        "Risk Level": "Moderate to High (currency + foreign country risk)",
+        "Tax Treatment": "Qualified if treaty country; foreign tax credit possible",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Securities Act 1933 / Exchange Act 1934",
+        "Trading Venue": "OTC or exchange",
+        "Notes / Mnemonics": "American Depositary Receipt. US dollars buy foreign companies. Currency risk is the trap answer."
+      },
+      {
+        "Product Name": "Rights",
+        "Category": "Equity-derivative",
+        "Issuer Type": "Corporation (to existing shareholders)",
+        "Income Type": "None",
+        "Risk Level": "Moderate (short-dated)",
+        "Tax Treatment": "Cap gain/loss when exercised or sold",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Securities Act 1933",
+        "Trading Venue": "Exchange",
+        "Notes / Mnemonics": "Short life (30-45 days). Lets existing shareholders buy NEW shares BELOW market. Avoid dilution."
+      },
+      {
+        "Product Name": "Warrants",
+        "Category": "Equity-derivative",
+        "Issuer Type": "Corporation",
+        "Income Type": "None",
+        "Risk Level": "High (long-dated, can expire worthless)",
+        "Tax Treatment": "Cap gain/loss",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Securities Act 1933",
+        "Trading Venue": "OTC or exchange",
+        "Notes / Mnemonics": "Long-term (years). Issued ABOVE market as 'sweetener' attached to bonds. Speculative."
+      },
+      {
+        "Product Name": "Corporate Bonds",
+        "Category": "Debt - Corporate",
+        "Issuer Type": "Corporation",
+        "Income Type": "Interest (semi-annual)",
+        "Risk Level": "Moderate to High (rating-dependent)",
+        "Tax Treatment": "Ordinary income on interest; cap gain/loss on sale",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Securities Act 1933 / Trust Indenture Act 1939 (>$50M)",
+        "Trading Venue": "OTC",
+        "Notes / Mnemonics": "Investment grade = BBB-/Baa3+. Senior to all stockholders in liquidation."
+      },
+      {
+        "Product Name": "Convertible Bonds",
+        "Category": "Debt - Corporate",
+        "Issuer Type": "Corporation",
+        "Income Type": "Interest (semi-annual)",
+        "Risk Level": "Moderate",
+        "Tax Treatment": "Ordinary on interest; cap gain on conversion",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Securities Act 1933",
+        "Trading Venue": "OTC",
+        "Notes / Mnemonics": "Converts to common at fixed ratio. Pays LOWER coupon for conversion privilege. Acts like stock when in-the-money."
+      },
+      {
+        "Product Name": "GO Municipal Bonds",
+        "Category": "Debt - Municipal",
+        "Issuer Type": "State/local govt",
+        "Income Type": "Interest (semi-annual)",
+        "Risk Level": "Low to Moderate",
+        "Tax Treatment": "Federally tax-EXEMPT; state-exempt if in-state issuer",
+        "Settlement": "T+1",
+        "Key Reg / Act": "MSRB rules (FINRA enforces); '33/'34 Acts mostly exempt",
+        "Trading Venue": "OTC",
+        "Notes / Mnemonics": "Backed by full faith, credit, AND TAXING POWER. Safer than revenue bonds."
+      },
+      {
+        "Product Name": "Municipal Revenue Bond",
+        "Category": "Debt - Municipal",
+        "Issuer Type": "State/local govt",
+        "Income Type": "Interest (semi-annual)",
+        "Risk Level": "Moderate (project-dependent)",
+        "Tax Treatment": "Federally tax-EXEMPT; state-exempt if in-state",
+        "Settlement": "T+1",
+        "Key Reg / Act": "MSRB rules (FINRA enforces)",
+        "Trading Venue": "OTC",
+        "Notes / Mnemonics": "Backed ONLY by project revenue, NOT taxing power. Riskier than GO. Examples: toll roads, water utilities."
+      },
+      {
+        "Product Name": "T-Bills",
+        "Category": "Debt - Treasury",
+        "Issuer Type": "US Treasury",
+        "Income Type": "Discount only (no coupon)",
+        "Risk Level": "Lowest (full faith and credit of US)",
+        "Tax Treatment": "Fed tax (ordinary income); state-EXEMPT",
+        "Settlement": "T+1 (or T+0)",
+        "Key Reg / Act": "Treasury (exempt from '33 Act)",
+        "Trading Venue": "OTC / TreasuryDirect",
+        "Notes / Mnemonics": "Maturity ≤ 1 year (4, 8, 13, 17, 26, 52 weeks). Bought at discount, mature at par."
+      },
+      {
+        "Product Name": "T-Notes",
+        "Category": "Debt - Treasury",
+        "Issuer Type": "US Treasury",
+        "Income Type": "Interest (semi-annual)",
+        "Risk Level": "Lowest credit risk",
+        "Tax Treatment": "Fed tax; state-EXEMPT",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Treasury (exempt)",
+        "Trading Venue": "OTC",
+        "Notes / Mnemonics": "Maturity 2-10 years. Quoted in 32nds (e.g., 99.16 = 99 + 16/32)."
+      },
+      {
+        "Product Name": "T-Bonds",
+        "Category": "Debt - Treasury",
+        "Issuer Type": "US Treasury",
+        "Income Type": "Interest (semi-annual)",
+        "Risk Level": "Lowest credit; HIGHEST interest-rate (duration) risk",
+        "Tax Treatment": "Fed tax; state-EXEMPT",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Treasury (exempt)",
+        "Trading Venue": "OTC",
+        "Notes / Mnemonics": "Maturity 20-30 years. Most price-sensitive bonds to rate changes due to long duration."
+      },
+      {
+        "Product Name": "TIPS",
+        "Category": "Debt - Treasury",
+        "Issuer Type": "US Treasury",
+        "Income Type": "Interest (semi-annual) + principal adjustment",
+        "Risk Level": "Low (inflation-protected)",
+        "Tax Treatment": "Fed tax on interest AND yearly inflation adjustment ('phantom income')",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Treasury (exempt)",
+        "Trading Venue": "OTC",
+        "Notes / Mnemonics": "Principal adjusts with CPI. Real return guaranteed. Phantom income trap on inflation accretion."
+      },
+      {
+        "Product Name": "STRIPS",
+        "Category": "Debt - Treasury",
+        "Issuer Type": "US Treasury (stripped)",
+        "Income Type": "Discount only (zero coupon)",
+        "Risk Level": "Low credit; HIGH duration risk",
+        "Tax Treatment": "Fed tax accreted yearly (phantom income); state-EXEMPT",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Treasury (exempt)",
+        "Trading Venue": "OTC",
+        "Notes / Mnemonics": "Zero-coupon Treasuries. Most price-sensitive of all bonds. Yearly phantom income tax."
+      },
+      {
+        "Product Name": "GNMA / FNMA / FHLMC MBS",
+        "Category": "Debt - Agency",
+        "Issuer Type": "Federal agency / GSE",
+        "Income Type": "Monthly interest + principal",
+        "Risk Level": "Low to Moderate (prepayment risk)",
+        "Tax Treatment": "Fed tax; GNMA state-taxable (FNMA/FHLMC also)",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Agency rules",
+        "Trading Venue": "OTC",
+        "Notes / Mnemonics": "Pass-through securities. GNMA = FULL govt guarantee. FNMA/FHLMC = implied/GSE backing."
+      },
+      {
+        "Product Name": "CMOs",
+        "Category": "Debt - Agency derivative",
+        "Issuer Type": "Various",
+        "Income Type": "Monthly (varies by tranche)",
+        "Risk Level": "Varies by tranche",
+        "Tax Treatment": "Fed and state taxable",
+        "Settlement": "T+1",
+        "Key Reg / Act": "SEC + Agency rules",
+        "Trading Venue": "OTC",
+        "Notes / Mnemonics": "Collateralized Mortgage Obligations. Tranches: PAC, TAC, Companion, Z. Sliced by prepayment risk."
+      },
+      {
+        "Product Name": "Mutual Funds (A/B/C/I)",
+        "Category": "Pooled - Open-end",
+        "Issuer Type": "Investment Company",
+        "Income Type": "Distributions (dividends + cap gains)",
+        "Risk Level": "Varies by portfolio",
+        "Tax Treatment": "Distributions taxed in year received, even if reinvested",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Investment Company Act 1940",
+        "Trading Venue": "Direct from fund",
+        "Notes / Mnemonics": "Forward-priced at NAV at 4:00 PM ET close. A=front load, B=back/CDSC, C=level (1%), I=institutional."
+      },
+      {
+        "Product Name": "ETFs",
+        "Category": "Pooled - Exchange-traded",
+        "Issuer Type": "Investment Company",
+        "Income Type": "Distributions",
+        "Risk Level": "Varies by portfolio",
+        "Tax Treatment": "Distributions + cap gain on sale",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Investment Company Act 1940",
+        "Trading Venue": "Exchange (intraday)",
+        "Notes / Mnemonics": "Trade like stocks intraday. Lower expenses than mutual funds. Tax-efficient via in-kind creation/redemption."
+      },
+      {
+        "Product Name": "UITs",
+        "Category": "Pooled - Unmanaged",
+        "Issuer Type": "Investment Company",
+        "Income Type": "Distributions",
+        "Risk Level": "Low (fixed portfolio, no manager)",
+        "Tax Treatment": "Distributions taxed in year received",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Investment Company Act 1940",
+        "Trading Venue": "Secondary market",
+        "Notes / Mnemonics": "FIXED unmanaged portfolio. Self-liquidates at termination date. No active management = lower cost."
+      },
+      {
+        "Product Name": "Closed-End Funds",
+        "Category": "Pooled - Closed-end",
+        "Issuer Type": "Investment Company",
+        "Income Type": "Distributions",
+        "Risk Level": "Varies; may use leverage",
+        "Tax Treatment": "Distributions + cap gain on sale",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Investment Company Act 1940",
+        "Trading Venue": "Exchange",
+        "Notes / Mnemonics": "FIXED share count. Trades at premium/discount to NAV. Can use leverage (unlike mutual funds)."
+      },
+      {
+        "Product Name": "REITs (Equity / Mortgage / Hybrid)",
+        "Category": "Pooled - Real estate",
+        "Issuer Type": "REIT corp/trust",
+        "Income Type": "Distributions (must pay 90%+ of income)",
+        "Risk Level": "Moderate to High",
+        "Tax Treatment": "Dividends mostly ORDINARY income (not qualified)",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Internal Revenue Code",
+        "Trading Venue": "Exchange (publicly traded)",
+        "Notes / Mnemonics": "MUST pay 90% of income out. Equity REIT = owns properties. Mortgage REIT = owns mortgage debt."
+      },
+      {
+        "Product Name": "DPPs",
+        "Category": "Pooled - Limited partnership",
+        "Issuer Type": "Partnership (sponsor + LPs)",
+        "Income Type": "Pass-through (gains, losses, deductions)",
+        "Risk Level": "High (illiquid, complex)",
+        "Tax Treatment": "Pass-through K-1; NOT double-taxed",
+        "Settlement": "N/A (private)",
+        "Key Reg / Act": "Securities Act 1933 / Reg D usually",
+        "Trading Venue": "Direct from sponsor",
+        "Notes / Mnemonics": "Direct Participation Programs. Real estate, oil & gas, equipment leasing. Limited partner liability capped at investment."
+      },
+      {
+        "Product Name": "Hedge Funds",
+        "Category": "Pooled - Private",
+        "Issuer Type": "Limited partnership",
+        "Income Type": "Performance fees + mgmt fees",
+        "Risk Level": "High",
+        "Tax Treatment": "Pass-through K-1",
+        "Settlement": "N/A (private)",
+        "Key Reg / Act": "Reg D usually; Investment Advisers Act for manager",
+        "Trading Venue": "Direct from sponsor",
+        "Notes / Mnemonics": "Accredited investors / QIBs only. '2 and 20' fee structure. Lock-up periods. Manager registers as IA."
+      },
+      {
+        "Product Name": "Variable Annuities",
+        "Category": "Insurance + Securities",
+        "Issuer Type": "Insurance company",
+        "Income Type": "Tax-deferred growth; ordinary income at distribution",
+        "Risk Level": "Moderate to High (depends on sub-accounts)",
+        "Tax Treatment": "Tax-deferred growth; 10% penalty if before 59½",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Investment Company Act 1940 + state insurance",
+        "Trading Venue": "Through B/D + insurance license",
+        "Notes / Mnemonics": "Separate account holds sub-accounts. Need BOTH securities AND insurance license to sell."
+      },
+      {
+        "Product Name": "Fixed Annuities",
+        "Category": "Insurance (NOT a security)",
+        "Issuer Type": "Insurance company",
+        "Income Type": "Fixed interest rate",
+        "Risk Level": "Low",
+        "Tax Treatment": "Tax-deferred growth; ordinary income on withdrawal",
+        "Settlement": "N/A",
+        "Key Reg / Act": "State insurance regulators ONLY",
+        "Trading Venue": "Insurance license only",
+        "Notes / Mnemonics": "NOT a security. No securities license needed. Insurance company guarantees the rate."
+      },
+      {
+        "Product Name": "Equity Options",
+        "Category": "Derivative",
+        "Issuer Type": "Options Clearing Corp (OCC)",
+        "Income Type": "Premium paid/received",
+        "Risk Level": "Very High",
+        "Tax Treatment": "Cap gain/loss; LEAPS can be long-term",
+        "Settlement": "T+1 (next biz day)",
+        "Key Reg / Act": "Exchange Act 1934 + OCC rules",
+        "Trading Venue": "Exchange (CBOE etc.)",
+        "Notes / Mnemonics": "Standard contract = 100 shares. Expires 3rd Friday at 11:59 PM ET. OCC is buyer to every seller, seller to every buyer."
+      },
+      {
+        "Product Name": "Index Options",
+        "Category": "Derivative",
+        "Issuer Type": "OCC",
+        "Income Type": "Premium",
+        "Risk Level": "High",
+        "Tax Treatment": "Cash-settled. Broad-based: 60/40 LT/ST treatment",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Exchange Act + OCC rules",
+        "Trading Venue": "Exchange",
+        "Notes / Mnemonics": "Cash-settled in dollars (no shares delivered). Index × multiplier. Broad-based gets 60/40 tax."
+      },
+      {
+        "Product Name": "CDs (Negotiable)",
+        "Category": "Debt - Bank",
+        "Issuer Type": "Bank",
+        "Income Type": "Interest",
+        "Risk Level": "Low",
+        "Tax Treatment": "Ordinary income",
+        "Settlement": "Direct (or T+1 if negotiable)",
+        "Key Reg / Act": "Federal & state bank regs",
+        "Trading Venue": "Bank or B/D",
+        "Notes / Mnemonics": "Negotiable CDs ($100K+) trade in secondary market. FDIC-insured up to $250K per depositor per bank."
+      },
+      {
+        "Product Name": "Commercial Paper",
+        "Category": "Debt - Money Market",
+        "Issuer Type": "Corporation",
+        "Income Type": "Discount only (no coupon)",
+        "Risk Level": "Low (short-term, top-quality corps)",
+        "Tax Treatment": "Ordinary income",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Exempt from 1933 registration if ≤270 days",
+        "Trading Venue": "Money market",
+        "Notes / Mnemonics": "Short-term unsecured corp debt. Exempt from registration if MATURITY ≤ 270 DAYS."
+      },
+      {
+        "Product Name": "Bankers Acceptances (BAs)",
+        "Category": "Debt - Money Market",
+        "Issuer Type": "Bank / corp",
+        "Income Type": "Discount only",
+        "Risk Level": "Low",
+        "Tax Treatment": "Ordinary income",
+        "Settlement": "T+1",
+        "Key Reg / Act": "Various",
+        "Trading Venue": "Money market",
+        "Notes / Mnemonics": "Time draft accepted (guaranteed) by a bank. Used for international trade financing."
+      },
+      {
+        "Product Name": "Repos",
+        "Category": "Debt - Govt collateralized",
+        "Issuer Type": "Various (banks, dealers)",
+        "Income Type": "Yield from repurchase price minus sale price",
+        "Risk Level": "Very Low",
+        "Tax Treatment": "Ordinary income",
+        "Settlement": "Same day",
+        "Key Reg / Act": "Various",
+        "Trading Venue": "Direct interbank",
+        "Notes / Mnemonics": "Repurchase agreement. Sale + commitment to buy back. Overnight or term. Backed by govt collateral."
+      }
+    ]
+  },
+  "Regs & Acts": {
+    "columns": [
+      "Act / Rule",
+      "Year",
+      "Nickname",
+      "Market Covered",
+      "Key Provisions",
+      "Who Enforces",
+      "Common Exam Trap"
+    ],
+    "rows": [
+      {
+        "Act / Rule": "Securities Act of 1933",
+        "Year": "1933",
+        "Nickname": "The Paper Act / Truth in Securities",
+        "Market Covered": "PRIMARY (new issues)",
+        "Key Provisions": "Registration of new issues. Prospectus required. Cooling-off period (20 days min). Civil liability for misstatements.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Confused with 1934 Act. Remember: 1933 = NEW issues, 1934 = TRADING."
+      },
+      {
+        "Act / Rule": "Securities Exchange Act of 1934",
+        "Year": "1934",
+        "Nickname": "The People Act",
+        "Market Covered": "SECONDARY (trading)",
+        "Key Provisions": "Created the SEC. Regulates B/Ds, exchanges, insider trading. Section 16 reports. Proxy rules.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Trick: 1934 Act CREATED the SEC, not the 1933 Act."
+      },
+      {
+        "Act / Rule": "Investment Company Act of 1940",
+        "Year": "1940",
+        "Nickname": "The Company Act",
+        "Market Covered": "Investment companies",
+        "Key Provisions": "Classifies investment companies: Face-amount, UIT, Management. Registration, disclosure, 12b-1 fees.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Regulates MUTUAL FUNDS and other inv. companies. NOT investment advisers (separate '40 Act)."
+      },
+      {
+        "Act / Rule": "Investment Advisers Act of 1940",
+        "Year": "1940",
+        "Nickname": "The Adviser Act",
+        "Market Covered": "Investment advisers",
+        "Key Provisions": "Defines IA. SEC registration if AUM ≥ $100M; state if less. Fiduciary duty to clients.",
+        "Who Enforces": "SEC + State",
+        "Common Exam Trap": "AUM threshold matters: $100M+ = SEC; under $100M = state."
+      },
+      {
+        "Act / Rule": "Trust Indenture Act of 1939",
+        "Year": "1939",
+        "Nickname": "The Bond Trustee Act",
+        "Market Covered": "Corporate bonds > $50M",
+        "Key Provisions": "Requires independent trustee for corporate bond issues over $50M. Trust indenture filed with SEC.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Applies to CORPORATE bonds only. Munis and Treasuries are EXEMPT."
+      },
+      {
+        "Act / Rule": "Insider Trading & Securities Fraud Enforcement Act 1988",
+        "Year": "1988",
+        "Nickname": "ITSFEA",
+        "Market Covered": "Insider trading",
+        "Key Provisions": "Treble damages (3x profit gained or loss avoided). Controlling person liability. Bounty payments to informants.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Penalties = up to 3x the profit/loss. Plus criminal penalties separately."
+      },
+      {
+        "Act / Rule": "Sarbanes-Oxley Act 2002",
+        "Year": "2002",
+        "Nickname": "SOX",
+        "Market Covered": "Public companies + auditors",
+        "Key Provisions": "CEO/CFO must certify financials. PCAOB created to oversee auditors. Whistleblower protections.",
+        "Who Enforces": "SEC + PCAOB",
+        "Common Exam Trap": "Created in response to Enron/WorldCom. PCAOB oversees AUDITORS not B/Ds."
+      },
+      {
+        "Act / Rule": "Dodd-Frank Act 2010",
+        "Year": "2010",
+        "Nickname": "Dodd-Frank",
+        "Market Covered": "Financial system broadly",
+        "Key Provisions": "Created CFPB. Volcker Rule. SEC whistleblower bounties. Required hedge fund advisers to register.",
+        "Who Enforces": "Multiple",
+        "Common Exam Trap": "Response to 2008 crisis. Major restructuring of financial regulation."
+      },
+      {
+        "Act / Rule": "JOBS Act 2012",
+        "Year": "2012",
+        "Nickname": "JOBS Act",
+        "Market Covered": "Emerging growth companies",
+        "Key Provisions": "Crowdfunding (Reg CF). Reg A+. Loosened IPO rules for EGCs. Allowed general solicitation under Reg D 506(c).",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Created Reg A+ (Tier 2: $75M cap) and equity crowdfunding under Reg CF."
+      },
+      {
+        "Act / Rule": "Securities Investor Protection Act 1970",
+        "Year": "1970",
+        "Nickname": "SIPA",
+        "Market Covered": "Customer accounts at failed B/Ds",
+        "Key Provisions": "Created SIPC. Insures customer assets when broker-dealer fails. $500K total / $250K cash.",
+        "Who Enforces": "SIPC (non-profit)",
+        "Common Exam Trap": "NOT FDIC. Covers MISSING securities/cash — does NOT cover loss of market value."
+      },
+      {
+        "Act / Rule": "Bank Secrecy Act / Patriot Act (AML)",
+        "Year": "1970/2001",
+        "Nickname": "BSA / AML",
+        "Market Covered": "All financial institutions",
+        "Key Provisions": "Customer Identification Program (CIP). CTRs for cash $10K+. SARs for suspicion $5K+. FinCEN oversight.",
+        "Who Enforces": "FinCEN",
+        "Common Exam Trap": "CTR = factual ($10K cash). SAR = suspicion ($5K) and CONFIDENTIAL (never tell customer)."
+      },
+      {
+        "Act / Rule": "Rule 144",
+        "Year": "1972",
+        "Nickname": "Restricted/Control Stock",
+        "Market Covered": "Resale of restricted/control stock",
+        "Key Provisions": "Holding period: 6 mo (reporting company) / 12 mo (non-reporting). Volume limits for affiliates.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Affiliates have ONGOING volume restrictions. Non-affiliates just have the hold period."
+      },
+      {
+        "Act / Rule": "Rule 144A",
+        "Year": "1990",
+        "Nickname": "144A",
+        "Market Covered": "QIB-to-QIB resales",
+        "Key Provisions": "Allows QIBs to trade unregistered securities freely among themselves. No public offering needed.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "QIB = $100M+ in invested assets. Used heavily in private placements."
+      },
+      {
+        "Act / Rule": "Rule 147 / 147A",
+        "Year": "1934/2016",
+        "Nickname": "Intrastate exemption",
+        "Market Covered": "Intrastate offerings",
+        "Key Provisions": "Exempt from federal registration if offered and sold ONLY within one state. 147A allows internet under conditions.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Pure local offerings. State Blue Sky laws still apply."
+      },
+      {
+        "Act / Rule": "Reg A (Tier 1 / Tier 2)",
+        "Year": "Securities Act 1933",
+        "Nickname": "Mini-IPO",
+        "Market Covered": "Smaller offerings",
+        "Key Provisions": "Tier 1: $20M/12mo, state review required. Tier 2: $75M/12mo, no state review (preempted), ongoing reports.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Tier 2 preempts state Blue Sky review. Tier 2 has a 10%-of-income/net-worth cap for non-accredited."
+      },
+      {
+        "Act / Rule": "Reg D (504, 506b, 506c)",
+        "Year": "Securities Act 1933",
+        "Nickname": "Private Placement",
+        "Market Covered": "Private offerings",
+        "Key Provisions": "504: $10M/12mo cap. 506(b): unlimited $, up to 35 non-accredited, NO solicitation. 506(c): unlimited $, accredited ONLY, solicitation OK.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "506(b) = no solicitation. 506(c) = solicitation OK but verification REQUIRED."
+      },
+      {
+        "Act / Rule": "Reg S",
+        "Year": "Securities Act 1933",
+        "Nickname": "Offshore",
+        "Market Covered": "Foreign offerings to non-US persons",
+        "Key Provisions": "Securities sold offshore to non-US persons are exempt from US registration.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Tested as the 'foreign sales exemption'."
+      },
+      {
+        "Act / Rule": "Reg T",
+        "Year": "Federal Reserve",
+        "Nickname": "Initial Margin",
+        "Market Covered": "Customer credit at B/Ds",
+        "Key Provisions": "50% initial margin requirement. Set by the Federal Reserve Board.",
+        "Who Enforces": "FRB (Fed)",
+        "Common Exam Trap": "FED sets Reg T (not SEC/FINRA). 50% INITIAL only — maintenance is FINRA's 25%/30%."
+      },
+      {
+        "Act / Rule": "Reg U",
+        "Year": "Federal Reserve",
+        "Nickname": "Bank Margin",
+        "Market Covered": "Bank loans for securities",
+        "Key Provisions": "Sets margin requirements for BANKS lending against securities collateral.",
+        "Who Enforces": "FRB",
+        "Common Exam Trap": "Reg T = broker-dealers. Reg U = banks. Often confused on exam."
+      },
+      {
+        "Act / Rule": "Reg M",
+        "Year": "SEC",
+        "Nickname": "Anti-Manipulation",
+        "Market Covered": "IPO / Secondary distribution period",
+        "Key Provisions": "Restricts trading by underwriters/participants during distribution to prevent price manipulation.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Quiet period for analysts/underwriters during new issue distribution."
+      },
+      {
+        "Act / Rule": "Reg SHO",
+        "Year": "SEC",
+        "Nickname": "Short Selling",
+        "Market Covered": "Short sales",
+        "Key Provisions": "'Locate and deliver' requirement. Marking orders short/short-exempt. Closeout requirements.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Locate requirement: B/D must reasonably believe shares can be borrowed BEFORE accepting short order."
+      },
+      {
+        "Act / Rule": "Reg BI (Best Interest)",
+        "Year": "SEC",
+        "Nickname": "Best Interest Standard",
+        "Market Covered": "B/D recommendations to retail",
+        "Key Provisions": "Replaces suitability for retail. Best interest standard. Disclosure obligations. Conflict-of-interest management.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Effective June 2020. Replaced FINRA suitability for retail recommendations."
+      },
+      {
+        "Act / Rule": "Form CRS",
+        "Year": "SEC",
+        "Nickname": "Client Relationship Summary",
+        "Market Covered": "Retail investor disclosures",
+        "Key Provisions": "2-page plain-English summary delivered to retail investors. Services, fees, conflicts, disciplinary history.",
+        "Who Enforces": "SEC",
+        "Common Exam Trap": "Required at start of relationship and after material updates."
+      },
+      {
+        "Act / Rule": "Customer Identification Program (CIP)",
+        "Year": "Patriot Act",
+        "Nickname": "Customer ID Program",
+        "Market Covered": "New accounts",
+        "Key Provisions": "Must obtain Name, DOB, Address, ID number (SSN/EIN/passport). Verify identity. Beneficial ownership rules added 2018.",
+        "Who Enforces": "FinCEN",
+        "Common Exam Trap": "Required at account OPENING — not later. Don't confuse with KYC (broader concept)."
+      }
+    ]
+  },
+  "Numbers": {
+    "columns": [
+      "Number / Threshold",
+      "Topic Area",
+      "What It Is",
+      "Memory Hook",
+      "Reg Source"
+    ],
+    "rows": [
+      {
+        "Number / Threshold": "50%",
+        "Topic Area": "Margin",
+        "What It Is": "Regulation T initial margin requirement set by the Federal Reserve",
+        "Memory Hook": "Fifty for the Fed (Reg T = Fed)",
+        "Reg Source": "Reg T"
+      },
+      {
+        "Number / Threshold": "25%",
+        "Topic Area": "Margin",
+        "What It Is": "FINRA minimum maintenance margin for LONG positions",
+        "Memory Hook": "Long is lower (25), short is higher (30)",
+        "Reg Source": "FINRA Rule 4210"
+      },
+      {
+        "Number / Threshold": "30%",
+        "Topic Area": "Margin",
+        "What It Is": "FINRA minimum maintenance margin for SHORT positions",
+        "Memory Hook": "Short is riskier — higher cushion (30)",
+        "Reg Source": "FINRA Rule 4210"
+      },
+      {
+        "Number / Threshold": "$25,000",
+        "Topic Area": "PDT",
+        "What It Is": "Pattern Day Trader minimum equity (4+ day trades in 5 biz days)",
+        "Memory Hook": "Four trades in five days → need $25K",
+        "Reg Source": "FINRA Rule 4210"
+      },
+      {
+        "Number / Threshold": "20 days",
+        "Topic Area": "Issuance",
+        "What It Is": "Minimum cooling-off period after S-1 filing",
+        "Memory Hook": "Twenty for the prospectus",
+        "Reg Source": "Securities Act 1933"
+      },
+      {
+        "Number / Threshold": "25 days",
+        "Topic Area": "Issuance",
+        "What It Is": "Quiet period after IPO (NYSE/AMEX listed)",
+        "Memory Hook": "Twenty-five for the silence after listing",
+        "Reg Source": "1933/1934 Acts"
+      },
+      {
+        "Number / Threshold": "90 days",
+        "Topic Area": "Issuance",
+        "What It Is": "Quiet period after IPO for non-listed (OTC)",
+        "Memory Hook": "Longer silence for OTC",
+        "Reg Source": "1933 Act"
+      },
+      {
+        "Number / Threshold": "5% / 10 days",
+        "Topic Area": "Reporting",
+        "What It Is": "Cross 5% beneficial ownership → file Sch 13D within 10 days",
+        "Memory Hook": "5 to file, 10 to deliver",
+        "Reg Source": "Exchange Act §13"
+      },
+      {
+        "Number / Threshold": "2 business days",
+        "Topic Area": "Reporting",
+        "What It Is": "Insiders (officers/directors/10%+ holders) file Form 4 after transactions",
+        "Memory Hook": "Form 4 in 2 days flat",
+        "Reg Source": "Exchange Act §16"
+      },
+      {
+        "Number / Threshold": "$200K / $300K / $1M",
+        "Topic Area": "Investor Status",
+        "What It Is": "Accredited investor: income individual / income joint / net worth (ex primary residence)",
+        "Memory Hook": "2-3-1 (millions/thousands)",
+        "Reg Source": "Reg D Rule 501"
+      },
+      {
+        "Number / Threshold": "$100M",
+        "Topic Area": "Investor Status",
+        "What It Is": "QIB (Qualified Institutional Buyer) minimum invested assets",
+        "Memory Hook": "QIB = 100 mil pro",
+        "Reg Source": "Rule 144A"
+      },
+      {
+        "Number / Threshold": "$20M",
+        "Topic Area": "Reg A",
+        "What It Is": "Reg A Tier 1 maximum offering in 12 months",
+        "Memory Hook": "Tier 1 = lower amount, has state review",
+        "Reg Source": "Reg A"
+      },
+      {
+        "Number / Threshold": "$75M",
+        "Topic Area": "Reg A",
+        "What It Is": "Reg A Tier 2 maximum offering in 12 months",
+        "Memory Hook": "Tier 2 = bigger, no state review (preempted)",
+        "Reg Source": "Reg A"
+      },
+      {
+        "Number / Threshold": "$10M",
+        "Topic Area": "Reg D",
+        "What It Is": "Reg D Rule 504 maximum in 12 months",
+        "Memory Hook": "504 four 4 — small ($10M)",
+        "Reg Source": "Reg D"
+      },
+      {
+        "Number / Threshold": "6 mo / 12 mo",
+        "Topic Area": "Rule 144",
+        "What It Is": "Restricted stock holding period: reporting co. / non-reporting",
+        "Memory Hook": "Reporting is faster (6); non-reporting waits (12)",
+        "Reg Source": "Rule 144"
+      },
+      {
+        "Number / Threshold": "$7,500 / $8,600 (2026)",
+        "Topic Area": "IRA",
+        "What It Is": "2026 IRA limits: $7,500 base + $1,100 catch-up at 50+.",
+        "Memory Hook": "Round, add $1K for catch-up",
+        "Reg Source": "IRS (annual update)"
+      },
+      {
+        "Number / Threshold": "$24,500 / $32,500 (2026)",
+        "Topic Area": "401(k)",
+        "What It Is": "2026 401(k) limits: $24,500 base + $8,000 catch-up at 50+. Super catch-up for ages 60-63: $11,250.",
+        "Memory Hook": "Roughly 3x IRA",
+        "Reg Source": "IRS (annual)"
+      },
+      {
+        "Number / Threshold": "73",
+        "Topic Area": "RMD",
+        "What It Is": "Required Minimum Distribution starting age (SECURE Act 2.0)",
+        "Memory Hook": "Was 70½, 72, now 73 — moving to 75 by 2033",
+        "Reg Source": "SECURE Act 2.0"
+      },
+      {
+        "Number / Threshold": "59½",
+        "Topic Area": "Retirement",
+        "What It Is": "Age before which 10% early-withdrawal penalty applies",
+        "Memory Hook": "Half past 59 to dodge the penalty",
+        "Reg Source": "IRC §72(t)"
+      },
+      {
+        "Number / Threshold": "$10,000+",
+        "Topic Area": "AML",
+        "What It Is": "CTR — Currency Transaction Report (CASH transactions)",
+        "Memory Hook": "Ten K = file the form",
+        "Reg Source": "BSA / Patriot Act"
+      },
+      {
+        "Number / Threshold": "$5,000+",
+        "Topic Area": "AML",
+        "What It Is": "SAR — Suspicious Activity Report threshold",
+        "Memory Hook": "Five K = suspicion = secret",
+        "Reg Source": "BSA / Patriot Act"
+      },
+      {
+        "Number / Threshold": "0.75% + 0.25%",
+        "Topic Area": "Mutual Funds",
+        "What It Is": "12b-1 max: distribution fee (0.75%) + service fee (0.25%) = 1.00% total",
+        "Memory Hook": "Three-quarters + quarter = full point",
+        "Reg Source": "ICA 1940"
+      },
+      {
+        "Number / Threshold": "0.25%",
+        "Topic Area": "Mutual Funds",
+        "What It Is": "No-load definition — total 12b-1 must be ≤ 0.25%",
+        "Memory Hook": "Quarter point or less = no-load",
+        "Reg Source": "FINRA Rule 2341"
+      },
+      {
+        "Number / Threshold": "4:00 PM ET",
+        "Topic Area": "Mutual Funds",
+        "What It Is": "Forward pricing — NAV calculated once daily at market close",
+        "Memory Hook": "Four o'clock forward",
+        "Reg Source": "ICA 1940"
+      },
+      {
+        "Number / Threshold": "3rd Friday 11:59 PM ET",
+        "Topic Area": "Options",
+        "What It Is": "Standard equity options expiration",
+        "Memory Hook": "Third Friday, almost midnight",
+        "Reg Source": "OCC / CBOE rules"
+      },
+      {
+        "Number / Threshold": "$19,000 (2026)",
+        "Topic Area": "Gift Tax",
+        "What It Is": "Annual gift exclusion per donor per recipient. Anchors 529 superfunding.",
+        "Memory Hook": "Adjusts yearly with inflation",
+        "Reg Source": "IRC §2503"
+      },
+      {
+        "Number / Threshold": "30 days",
+        "Topic Area": "Wash Sale",
+        "What It Is": "Sell at loss, buy back within 30 days BEFORE OR AFTER = disallowed loss",
+        "Memory Hook": "30 each side of trade = 61-day total window",
+        "Reg Source": "IRC §1091"
+      },
+      {
+        "Number / Threshold": "5%",
+        "Topic Area": "Markups",
+        "What It Is": "FINRA 5% policy GUIDELINE on B/D markups/markdowns (NOT a hard rule)",
+        "Memory Hook": "Five is guidance, not gospel",
+        "Reg Source": "FINRA Rule 2121"
+      },
+      {
+        "Number / Threshold": "$50M",
+        "Topic Area": "Trust Indenture",
+        "What It Is": "Trust Indenture Act applies to corporate bond issues over $50M",
+        "Memory Hook": "Fifty mil triggers the trustee",
+        "Reg Source": "TIA 1939"
+      },
+      {
+        "Number / Threshold": "$500K / $250K",
+        "Topic Area": "SIPC",
+        "What It Is": "SIPC max coverage per customer: total / cash sub-limit",
+        "Memory Hook": "5 total, 2.5 cash",
+        "Reg Source": "SIPA 1970"
+      },
+      {
+        "Number / Threshold": "$250K",
+        "Topic Area": "FDIC",
+        "What It Is": "FDIC bank deposit insurance per depositor per insured bank",
+        "Memory Hook": "Same as SIPC cash sub-limit",
+        "Reg Source": "Banking Act 1933"
+      },
+      {
+        "Number / Threshold": "T+1",
+        "Topic Area": "Settlement",
+        "What It Is": "Standard settlement for stocks, bonds, ETFs, options (May 2024+)",
+        "Memory Hook": "Trade day + 1",
+        "Reg Source": "Exchange Act"
+      },
+      {
+        "Number / Threshold": "T+0",
+        "Topic Area": "Settlement",
+        "What It Is": "Same-day settlement for Treasuries and options (technically)",
+        "Memory Hook": "Treasuries and options settle same-day",
+        "Reg Source": "Exchange Act"
+      }
+    ]
+  },
+  "Account Types": {
+    "columns": [
+      "Account Type",
+      "Owner(s)",
+      "Tax Treatment",
+      "Contribution Limit",
+      "Withdrawal Rules",
+      "Key Distinction",
+      "Suitability Notes"
+    ],
+    "rows": [
+      {
+        "Account Type": "Traditional IRA",
+        "Owner(s)": "Individual",
+        "Tax Treatment": "Pre-tax contributions; ordinary income at withdrawal",
+        "Contribution Limit": "$7,000 base / $8,000 if 50+ (2025; verify)",
+        "Withdrawal Rules": "59½ minimum (10% penalty before); RMDs starting age 73",
+        "Key Distinction": "Tax deduction NOW, taxes LATER",
+        "Suitability Notes": "For clients expecting LOWER tax bracket in retirement"
+      },
+      {
+        "Account Type": "Roth IRA",
+        "Owner(s)": "Individual",
+        "Tax Treatment": "After-tax contributions; qualified withdrawals tax-FREE",
+        "Contribution Limit": "Same $ limit as Traditional, but income phase-outs apply",
+        "Withdrawal Rules": "Contributions anytime tax/penalty-free; earnings need 59½ AND 5-year rule",
+        "Key Distinction": "Pay NOW, FREE forever. NO RMDs during owner lifetime.",
+        "Suitability Notes": "For clients expecting HIGHER tax bracket in retirement; younger savers"
+      },
+      {
+        "Account Type": "Individual Cash",
+        "Owner(s)": "Individual",
+        "Tax Treatment": "Standard tax; gains/losses on Schedule D",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Any time (subject to settlement)",
+        "Key Distinction": "Most basic account — cash settles all trades",
+        "Suitability Notes": "Default account for general investing"
+      },
+      {
+        "Account Type": "Joint Tenants in Common (JTIC)",
+        "Owner(s)": "2+ individuals",
+        "Tax Treatment": "Each owner taxed on their pro-rata share",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Any time",
+        "Key Distinction": "Owners can have UNEQUAL shares. Share passes via WILL, not survivor.",
+        "Suitability Notes": "Use when ownership shares are unequal (business partners)"
+      },
+      {
+        "Account Type": "Joint Tenants with Right of Survivorship (JTWROS)",
+        "Owner(s)": "2+ individuals (often spouses)",
+        "Tax Treatment": "Each taxed on share; full step-up on death of one",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Any time",
+        "Key Distinction": "Equal shares. Passes AUTOMATICALLY to survivor. Avoids probate.",
+        "Suitability Notes": "Default for married couples in most states"
+      },
+      {
+        "Account Type": "Tenants by Entirety (TBE)",
+        "Owner(s)": "Married couples only",
+        "Tax Treatment": "Same as JTWROS but with creditor protection",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Any time",
+        "Key Distinction": "Like JTWROS + creditor protection. Available only in some states.",
+        "Suitability Notes": "Most protective from individual creditors. Spouses only."
+      },
+      {
+        "Account Type": "Margin Account",
+        "Owner(s)": "Individual or entity",
+        "Tax Treatment": "Interest deductible against investment income (margin interest)",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Any time (subject to margin call rules)",
+        "Key Distinction": "Borrows on collateral. Reg T 50% initial, FINRA 25%/30% maintenance.",
+        "Suitability Notes": "NEVER for retirement accounts. Need account agreement + signed hypothecation."
+      },
+      {
+        "Account Type": "Discretionary Account",
+        "Owner(s)": "Individual + B/D with discretion",
+        "Tax Treatment": "Same as underlying account type",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Any time",
+        "Key Distinction": "B/D needs WRITTEN authorization before trading without prior approval.",
+        "Suitability Notes": "Prior written authorization required. Higher supervisory standard."
+      },
+      {
+        "Account Type": "Custodial UTMA",
+        "Owner(s)": "Minor + adult custodian",
+        "Tax Treatment": "Kiddie tax (some at parent's marginal rate)",
+        "Contribution Limit": "No limit (but watch annual gift exclusion)",
+        "Withdrawal Rules": "Custodian controls until age of majority (18-25 by state)",
+        "Key Distinction": "Irrevocable gift to minor. Wider asset range than UGMA.",
+        "Suitability Notes": "Education savings, gifting strategy. Asset hurts financial aid eligibility."
+      },
+      {
+        "Account Type": "Custodial UGMA",
+        "Owner(s)": "Minor + adult custodian",
+        "Tax Treatment": "Kiddie tax rates",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Custodian controls until age of majority (state-dependent)",
+        "Key Distinction": "MORE RESTRICTED asset types than UTMA (older, narrower).",
+        "Suitability Notes": "Largely replaced by UTMA in most states"
+      },
+      {
+        "Account Type": "529 Plan",
+        "Owner(s)": "Owner + beneficiary",
+        "Tax Treatment": "Tax-deferred growth; tax-FREE for qualified ed expenses (K-12 + college)",
+        "Contribution Limit": "~$18K/yr gift exclusion (or 5-yr forward to $90K)",
+        "Withdrawal Rules": "Tax + 10% penalty on non-qualified withdrawals",
+        "Key Distinction": "Owner KEEPS control. Beneficiary can be changed within family.",
+        "Suitability Notes": "Best general education savings vehicle. State tax deduction in many states."
+      },
+      {
+        "Account Type": "Coverdell ESA",
+        "Owner(s)": "Beneficiary under 18 + responsible adult",
+        "Tax Treatment": "Tax-free for qualified education expenses",
+        "Contribution Limit": "$2,000/year per beneficiary (combined from all sources)",
+        "Withdrawal Rules": "Used for ed expenses; reverts at age 30",
+        "Key Distinction": "K-12 expenses qualify (broader than 529 originally). Income phase-outs apply.",
+        "Suitability Notes": "Lower limit than 529 but historically more flexible"
+      },
+      {
+        "Account Type": "SEP IRA",
+        "Owner(s)": "Self-employed / small biz owner",
+        "Tax Treatment": "Pre-tax employer contributions; ordinary income at withdrawal",
+        "Contribution Limit": "Lesser of 25% of comp or $69K (2024)",
+        "Withdrawal Rules": "Same as Traditional IRA — 59½, RMDs at 73",
+        "Key Distinction": "EMPLOYER-funded only. No employee contributions. Easy to administer.",
+        "Suitability Notes": "Best for self-employed with high income looking for simple plan"
+      },
+      {
+        "Account Type": "SIMPLE IRA",
+        "Owner(s)": "Small employer (≤100 employees)",
+        "Tax Treatment": "Pre-tax employee + employer; ordinary income at withdrawal",
+        "Contribution Limit": "$16K (2024) + $3.5K catch-up at 50+",
+        "Withdrawal Rules": "Same as Traditional IRA, PLUS 2-year withdrawal restriction in early years",
+        "Key Distinction": "Mandatory employer match (up to 3%) or 2% non-elective contribution",
+        "Suitability Notes": "For small employers wanting cheaper alternative to 401(k)"
+      },
+      {
+        "Account Type": "401(k)",
+        "Owner(s)": "Employer + employee",
+        "Tax Treatment": "Pre-tax employee + employer; ordinary income at withdrawal",
+        "Contribution Limit": "$23K (2024) + $7.5K catch-up at 50+",
+        "Withdrawal Rules": "59½ for penalty-free; RMDs at 73; in-service withdrawals limited",
+        "Key Distinction": "Employer-sponsored. Can include employer match. Self-directed within plan options.",
+        "Suitability Notes": "Most common workplace retirement plan"
+      },
+      {
+        "Account Type": "Roth 401(k)",
+        "Owner(s)": "Employer + employee",
+        "Tax Treatment": "After-tax contributions; tax-FREE qualified withdrawals",
+        "Contribution Limit": "Same dollar limits as Traditional 401(k)",
+        "Withdrawal Rules": "59½ + 5-year rule for tax-free; RMDs at 73 (unlike Roth IRA)",
+        "Key Distinction": "NO income phase-outs (unlike Roth IRA). Can split with Traditional 401(k).",
+        "Suitability Notes": "Best for high earners locked out of Roth IRA"
+      },
+      {
+        "Account Type": "Solo 401(k)",
+        "Owner(s)": "Self-employed (no employees besides spouse)",
+        "Tax Treatment": "Pre-tax OR Roth options",
+        "Contribution Limit": "Employee deferral + employer contribution up to $69K (2024)",
+        "Withdrawal Rules": "Same as regular 401(k)",
+        "Key Distinction": "Combines employee deferral + employer contribution from same person.",
+        "Suitability Notes": "Highest contribution potential for sole proprietors"
+      },
+      {
+        "Account Type": "403(b)",
+        "Owner(s)": "Non-profit / school employees",
+        "Tax Treatment": "Pre-tax employee + employer; ordinary income at withdrawal",
+        "Contribution Limit": "Same as 401(k)",
+        "Withdrawal Rules": "Same as 401(k)",
+        "Key Distinction": "For 501(c)(3) orgs, schools, hospitals, churches.",
+        "Suitability Notes": "Like 401(k) for the non-profit sector"
+      },
+      {
+        "Account Type": "457(b)",
+        "Owner(s)": "State/local govt + some non-profits",
+        "Tax Treatment": "Pre-tax; ordinary income at withdrawal",
+        "Contribution Limit": "$23K (2024)",
+        "Withdrawal Rules": "NO 10% early-withdrawal penalty if separated from service (unique!)",
+        "Key Distinction": "Govt employees can max BOTH 457 + 403/401 in same year.",
+        "Suitability Notes": "Unique: no early-withdrawal penalty. Stacks with 403(b)/401(k)."
+      },
+      {
+        "Account Type": "Sole Proprietorship",
+        "Owner(s)": "Individual",
+        "Tax Treatment": "Pass-through on Schedule C",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Any time",
+        "Key Distinction": "Owner has UNLIMITED personal liability",
+        "Suitability Notes": "Simplest business form, but no liability protection"
+      },
+      {
+        "Account Type": "Partnership (GP / LP)",
+        "Owner(s)": "2+ partners",
+        "Tax Treatment": "Pass-through K-1",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Per partnership agreement",
+        "Key Distinction": "GP = unlimited liability. LP = limited to investment.",
+        "Suitability Notes": "Liability profile differs sharply between GP and LP"
+      },
+      {
+        "Account Type": "LLC",
+        "Owner(s)": "One or more members",
+        "Tax Treatment": "Default pass-through; can elect S-corp or C-corp",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Per operating agreement",
+        "Key Distinction": "Members get LIMITED liability. Flexible tax election.",
+        "Suitability Notes": "Most flexible business structure"
+      },
+      {
+        "Account Type": "Corporation (C-corp / S-corp)",
+        "Owner(s)": "Shareholders",
+        "Tax Treatment": "C-corp: double-taxed. S-corp: pass-through (max 100 US shareholders).",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Per corporate rules",
+        "Key Distinction": "Limited liability. S-corp restricted to ≤100 US-person shareholders.",
+        "Suitability Notes": "Liability protection at cost of complexity"
+      },
+      {
+        "Account Type": "Trust (Revocable / Irrevocable)",
+        "Owner(s)": "Grantor + beneficiaries",
+        "Tax Treatment": "Revocable: grantor taxed. Irrevocable: trust taxed.",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Per trust terms",
+        "Key Distinction": "Revocable CAN be changed. Irrevocable CANNOT.",
+        "Suitability Notes": "Estate planning. Irrevocable removes assets from grantor's estate."
+      },
+      {
+        "Account Type": "TOD / POD Designations",
+        "Owner(s)": "Account holder + named beneficiary",
+        "Tax Treatment": "Same as underlying account",
+        "Contribution Limit": "No limit",
+        "Withdrawal Rules": "Per beneficiary designation",
+        "Key Distinction": "Transfer on Death / Payable on Death. Avoids probate.",
+        "Suitability Notes": "Simple probate bypass. Doesn't replace a full estate plan."
+      }
+    ]
+  },
+  "Options": {
+    "columns": [
+      "Position",
+      "Outlook",
+      "Max Gain",
+      "Max Loss",
+      "Breakeven",
+      "When to Use",
+      "Notes"
+    ],
+    "rows": [
+      {
+        "Position": "Long Call",
+        "Outlook": "Bullish",
+        "Max Gain": "Unlimited (stock has no upside cap)",
+        "Max Loss": "Premium paid",
+        "Breakeven": "Strike + Premium",
+        "When to Use": "Strong bullish view; leverage with capped downside",
+        "Notes": "Right (not obligation) to BUY 100 shares at strike"
+      },
+      {
+        "Position": "Long Put",
+        "Outlook": "Bearish",
+        "Max Gain": "Strike - Premium (max when stock = $0)",
+        "Max Loss": "Premium paid",
+        "Breakeven": "Strike - Premium",
+        "When to Use": "Hedge long stock; or speculate on decline",
+        "Notes": "Right to SELL 100 shares at strike"
+      },
+      {
+        "Position": "Short (Naked) Call",
+        "Outlook": "Bearish to neutral",
+        "Max Gain": "Premium received",
+        "Max Loss": "UNLIMITED (stock can rise forever)",
+        "Breakeven": "Strike + Premium",
+        "When to Use": "Income on stock you expect to stay below strike",
+        "Notes": "HIGHEST-risk basic strategy. Big margin required."
+      },
+      {
+        "Position": "Short (Naked) Put",
+        "Outlook": "Bullish to neutral",
+        "Max Gain": "Premium received",
+        "Max Loss": "Strike - Premium (stock to $0)",
+        "Breakeven": "Strike - Premium",
+        "When to Use": "Income; willing to buy stock at lower price if assigned",
+        "Notes": "Less risky than naked call (loss is capped by stock at $0)"
+      },
+      {
+        "Position": "Covered Call",
+        "Outlook": "Neutral to mildly bullish",
+        "Max Gain": "Premium + (Strike - Stock Cost) if assigned",
+        "Max Loss": "Stock Cost - Premium (stock to $0)",
+        "Breakeven": "Stock Cost - Premium",
+        "When to Use": "Generate income on long stock; willing to sell at strike",
+        "Notes": "Caps upside at strike + premium. Most common income strategy."
+      },
+      {
+        "Position": "Protective Put (Married Put)",
+        "Outlook": "Long stock + bearish protection",
+        "Max Gain": "Unlimited (long stock side)",
+        "Max Loss": "Stock Cost - Strike + Premium",
+        "Breakeven": "Stock Cost + Premium",
+        "When to Use": "Insurance on long stock against decline",
+        "Notes": "Married = bought together at same time. Protective = added later."
+      },
+      {
+        "Position": "Long Straddle",
+        "Outlook": "Big move expected EITHER direction",
+        "Max Gain": "Unlimited up (call side); substantial down (put side)",
+        "Max Loss": "Total premiums paid (both options)",
+        "Breakeven": "Strike ± Total Premiums",
+        "When to Use": "Volatility play: earnings, FDA decisions, regulatory rulings",
+        "Notes": "SAME strike + SAME expiration. Buy 1 call + 1 put."
+      },
+      {
+        "Position": "Short Straddle",
+        "Outlook": "Low volatility expected",
+        "Max Gain": "Total premiums received",
+        "Max Loss": "UNLIMITED (call side)",
+        "Breakeven": "Strike ± Total Premiums",
+        "When to Use": "Income; expecting price to stay still",
+        "Notes": "Very high risk. Significant margin. Profit zone is narrow."
+      },
+      {
+        "Position": "Long Strangle",
+        "Outlook": "Big move expected; cheaper than straddle",
+        "Max Gain": "Unlimited up; substantial down",
+        "Max Loss": "Total premiums paid",
+        "Breakeven": "Lower strike - Total Prem; Higher strike + Total Prem",
+        "When to Use": "Volatility play with lower entry cost than straddle",
+        "Notes": "Different OTM strikes; same expiration. Wider breakevens than straddle."
+      },
+      {
+        "Position": "Short Strangle",
+        "Outlook": "Low volatility; wider profit zone than short straddle",
+        "Max Gain": "Total premiums received",
+        "Max Loss": "UNLIMITED (call side)",
+        "Breakeven": "Lower strike - Prems; Higher strike + Prems",
+        "When to Use": "Income strategy with wider profit range",
+        "Notes": "High risk but less than short straddle. Different OTM strikes."
+      },
+      {
+        "Position": "Bull Call Spread (Debit)",
+        "Outlook": "Mildly bullish",
+        "Max Gain": "High Strike - Low Strike - Net Debit",
+        "Max Loss": "Net debit paid",
+        "Breakeven": "Low Strike + Net Debit",
+        "When to Use": "Bullish but limited capital; want capped risk",
+        "Notes": "BUY lower call, SELL higher call. Debit spread."
+      },
+      {
+        "Position": "Bear Call Spread (Credit)",
+        "Outlook": "Mildly bearish",
+        "Max Gain": "Net credit received",
+        "Max Loss": "High Strike - Low Strike - Net Credit",
+        "Breakeven": "Low Strike + Net Credit",
+        "When to Use": "Bearish income strategy with capped risk",
+        "Notes": "SELL lower call, BUY higher call. Credit spread."
+      },
+      {
+        "Position": "Bull Put Spread (Credit)",
+        "Outlook": "Mildly bullish",
+        "Max Gain": "Net credit received",
+        "Max Loss": "High Strike - Low Strike - Net Credit",
+        "Breakeven": "High Strike - Net Credit",
+        "When to Use": "Bullish income strategy with capped risk",
+        "Notes": "SELL higher put, BUY lower put. Credit spread."
+      },
+      {
+        "Position": "Bear Put Spread (Debit)",
+        "Outlook": "Mildly bearish",
+        "Max Gain": "High Strike - Low Strike - Net Debit",
+        "Max Loss": "Net debit paid",
+        "Breakeven": "High Strike - Net Debit",
+        "When to Use": "Bearish with limited capital and capped risk",
+        "Notes": "BUY higher put, SELL lower put. Debit spread."
+      },
+      {
+        "Position": "Iron Condor",
+        "Outlook": "Neutral; range-bound",
+        "Max Gain": "Total net credit received",
+        "Max Loss": "Spread width - Net credit",
+        "Breakeven": "Lower BE / Upper BE (two breakevens)",
+        "When to Use": "Range-bound markets, low expected volatility",
+        "Notes": "Sells OTM call spread + OTM put spread. Four legs."
+      },
+      {
+        "Position": "Butterfly",
+        "Outlook": "Neutral; price expected near middle strike at expiration",
+        "Max Gain": "Middle Strike - Lower Strike - Net Debit",
+        "Max Loss": "Net debit paid",
+        "Breakeven": "Lower Strike + Debit / Higher Strike - Debit",
+        "When to Use": "Very specific price target at expiration",
+        "Notes": "Low cost, low reward, low risk. Sweet spot at center strike."
+      },
+      {
+        "Position": "Collar",
+        "Outlook": "Long stock + protection + financed protection",
+        "Max Gain": "Call Strike - Stock Cost + Net Credit (or - Debit)",
+        "Max Loss": "Stock Cost - Put Strike - Net Credit (or + Debit)",
+        "Breakeven": "Stock Cost ± Net Cost",
+        "When to Use": "Hedge long stock cheaply (sell call to fund put)",
+        "Notes": "Buy protective put + Sell covered call. Often near-zero cost."
+      }
+    ]
+  },
+  "Formulas": {
+    "columns": [
+      "Formula Name",
+      "Formula",
+      "Used For",
+      "Plain English",
+      "Example",
+      "Memorized?"
+    ],
+    "rows": [
+      {
+        "Formula Name": "Current Yield (CY)",
+        "Formula": "Annual Coupon ÷ Current Market Price",
+        "Used For": "Bonds",
+        "Plain English": "What % return you'd earn at today's price",
+        "Example": "$1,000 bond, 5% coupon, trading at $950 → $50 ÷ $950 = 5.26%",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Nominal / Coupon Yield",
+        "Formula": "Annual Coupon ÷ Par ($1,000)",
+        "Used For": "Bonds",
+        "Plain English": "Just the stated coupon rate — never changes",
+        "Example": "5% coupon bond = 5% nominal yield always",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Yield to Maturity (YTM) approx.",
+        "Formula": "(Coupon + (Par - Price)/Years) ÷ ((Par + Price)/2)",
+        "Used For": "Bonds",
+        "Plain English": "Total return if held to maturity, including coupon AND price gain/loss",
+        "Example": "Key concept: YTM > CY when bond at DISCOUNT; YTM < CY when at PREMIUM",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Yield to Call (YTC)",
+        "Formula": "Same as YTM but use call price + years to call",
+        "Used For": "Callable bonds",
+        "Plain English": "Total return if bond is called at first call date",
+        "Example": "For premium callable bonds, YTC is the more conservative (lower) yield to quote",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "After-Tax Yield (taxable)",
+        "Formula": "Yield × (1 - tax rate)",
+        "Used For": "Tax comparison",
+        "Plain English": "What you actually keep after federal tax on a corporate bond",
+        "Example": "5% corp bond, 24% bracket → 5% × 0.76 = 3.80% after-tax",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Tax-Equivalent Yield (muni)",
+        "Formula": "Muni Yield ÷ (1 - tax rate)",
+        "Used For": "Tax comparison",
+        "Plain English": "What a taxable bond would need to yield to match a tax-free muni",
+        "Example": "4% muni, 24% bracket → 4% ÷ 0.76 = 5.26% TEY (taxable equivalent)",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "NAV (Net Asset Value)",
+        "Formula": "(Total Assets - Total Liabilities) ÷ Shares Outstanding",
+        "Used For": "Mutual funds",
+        "Plain English": "Per-share value of the fund — calculated once daily at 4 PM ET",
+        "Example": "$100M assets - $5M liabilities = $95M ÷ 1M shares = $95 NAV",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Mutual Fund POP",
+        "Formula": "NAV ÷ (1 - Sales Charge %)",
+        "Used For": "Class A funds",
+        "Plain English": "Public Offering Price — what investor pays (NAV + load)",
+        "Example": "NAV $20, 5% load → $20 ÷ 0.95 = $21.05 POP",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Sales Charge %",
+        "Formula": "(POP - NAV) ÷ POP",
+        "Used For": "Mutual funds",
+        "Plain English": "The actual % markup the customer pays as a load",
+        "Example": "POP $21.05, NAV $20 → ($21.05 - $20) ÷ $21.05 = 5.0%",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Call Breakeven",
+        "Formula": "Strike + Premium",
+        "Used For": "Long call",
+        "Plain English": "Stock price at expiration where long call breaks even",
+        "Example": "$50 strike call bought at $2 premium → BE = $52",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Put Breakeven",
+        "Formula": "Strike - Premium",
+        "Used For": "Long put",
+        "Plain English": "Stock price at expiration where long put breaks even",
+        "Example": "$50 strike put bought at $2 premium → BE = $48",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Intrinsic Value (Call)",
+        "Formula": "MAX(Stock Price - Strike, 0)",
+        "Used For": "Options",
+        "Plain English": "What the option is worth if exercised right now — never negative",
+        "Example": "Stock $52, call strike $50 → $2 intrinsic. Stock $48 → $0 intrinsic.",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Intrinsic Value (Put)",
+        "Formula": "MAX(Strike - Stock Price, 0)",
+        "Used For": "Options",
+        "Plain English": "Profit if exercised today — never negative",
+        "Example": "Stock $48, put strike $50 → $2 intrinsic. Stock $52 → $0 intrinsic.",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Time Value",
+        "Formula": "Premium - Intrinsic Value",
+        "Used For": "Options",
+        "Plain English": "The 'speculative' portion of premium — decays to zero at expiration",
+        "Example": "$3 premium, $2 intrinsic → $1 time value",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Long Margin Call Trigger",
+        "Formula": "Loan Amount ÷ 0.75",
+        "Used For": "Margin",
+        "Plain English": "Stock price at which long position triggers maintenance call (25%)",
+        "Example": "Bought $20K stock with $10K loan → call at $10K ÷ 0.75 = $13,333",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Inflation-Adjusted (Real) Return",
+        "Formula": "((1 + Nominal) ÷ (1 + Inflation)) - 1",
+        "Used For": "Real return",
+        "Plain English": "Your TRUE purchasing-power return after inflation",
+        "Example": "8% nominal, 3% inflation → 1.08 ÷ 1.03 - 1 = 4.85% real return",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Dividend Yield",
+        "Formula": "Annual Dividend ÷ Stock Price",
+        "Used For": "Stocks",
+        "Plain English": "Income return on a stock at current price",
+        "Example": "$2 annual div, $50 stock → 4% dividend yield",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Total Return",
+        "Formula": "(Income + Cap Gain) ÷ Beginning Value",
+        "Used For": "Any investment",
+        "Plain English": "Combined return from income + price appreciation",
+        "Example": "Stock: $5 gain + $2 div on $50 cost basis → 14% total return",
+        "Memorized?": "☐"
+      },
+      {
+        "Formula Name": "Capital Gain / Loss",
+        "Formula": "Sale Proceeds - Cost Basis",
+        "Used For": "All securities",
+        "Plain English": "Profit (positive) or loss (negative) on sale",
+        "Example": "Bought at $50, sold at $65 → $15 capital gain",
+        "Memorized?": "☐"
+      }
+    ]
+  },
+  "Authorities": {
+    "columns": [
+      "Body",
+      "Abbreviation",
+      "Type",
+      "Created By",
+      "Jurisdiction",
+      "Key Powers",
+      "Common Exam Trap"
+    ],
+    "rows": [
+      {
+        "Body": "Securities and Exchange Commission",
+        "Abbreviation": "SEC",
+        "Type": "Federal agency",
+        "Created By": "Securities Exchange Act of 1934",
+        "Jurisdiction": "All securities markets, public companies",
+        "Key Powers": "Rule-making, enforcement, registration approval",
+        "Common Exam Trap": "The SEC was created by the 1934 Act, NOT the 1933 Act."
+      },
+      {
+        "Body": "Financial Industry Regulatory Authority",
+        "Abbreviation": "FINRA",
+        "Type": "Self-Regulatory Organization (SRO)",
+        "Created By": "Merger of NASD + NYSE regulation (2007)",
+        "Jurisdiction": "Broker-dealers and registered reps",
+        "Key Powers": "Writes/enforces conduct rules, administers Series exams, arbitration",
+        "Common Exam Trap": "NOT a government agency. Reports up to the SEC."
+      },
+      {
+        "Body": "Municipal Securities Rulemaking Board",
+        "Abbreviation": "MSRB",
+        "Type": "SRO",
+        "Created By": "Securities Acts Amendments of 1975",
+        "Jurisdiction": "Municipal securities (state/local govt issues)",
+        "Key Powers": "Writes rules for muni dealers and advisers; FINRA enforces on B/Ds",
+        "Common Exam Trap": "MSRB WRITES rules but does NOT enforce on B/Ds — FINRA does."
+      },
+      {
+        "Body": "Securities Investor Protection Corporation",
+        "Abbreviation": "SIPC",
+        "Type": "Non-profit (industry-funded)",
+        "Created By": "Securities Investor Protection Act 1970",
+        "Jurisdiction": "Customer accounts at failed B/Ds",
+        "Key Powers": "Insures $500K total / $250K cash when B/D fails",
+        "Common Exam Trap": "NOT a govt agency. NOT FDIC. Does NOT cover loss of market value."
+      },
+      {
+        "Body": "Federal Deposit Insurance Corporation",
+        "Abbreviation": "FDIC",
+        "Type": "Federal agency",
+        "Created By": "Banking Act of 1933",
+        "Jurisdiction": "Bank deposit accounts (NOT securities)",
+        "Key Powers": "Insures bank deposits up to $250K per depositor per insured bank",
+        "Common Exam Trap": "FDIC = banks. SIPC = brokerage accounts. They never overlap."
+      },
+      {
+        "Body": "Federal Reserve Board",
+        "Abbreviation": "FRB / Fed",
+        "Type": "Federal agency (central bank)",
+        "Created By": "Federal Reserve Act 1913",
+        "Jurisdiction": "Monetary policy, banking, margin (Reg T)",
+        "Key Powers": "Sets Reg T (50% initial margin); controls money supply via FOMC",
+        "Common Exam Trap": "Reg T comes from the FED — not SEC or FINRA."
+      },
+      {
+        "Body": "Department of the Treasury",
+        "Abbreviation": "Treasury",
+        "Type": "Federal executive department",
+        "Created By": "Established 1789",
+        "Jurisdiction": "Federal finances, debt issuance, tax administration",
+        "Key Powers": "Issues T-bills, notes, bonds, TIPS. Houses IRS and FinCEN.",
+        "Common Exam Trap": "Issuer, not regulator. Treasuries are EXEMPT from '33 Act registration."
+      },
+      {
+        "Body": "Financial Crimes Enforcement Network",
+        "Abbreviation": "FinCEN",
+        "Type": "Bureau of Treasury",
+        "Created By": "Bank Secrecy Act 1970 / Patriot Act 2001",
+        "Jurisdiction": "AML and financial crimes",
+        "Key Powers": "Receives CTRs ($10K+) and SARs ($5K+); enforces AML rules",
+        "Common Exam Trap": "Bureau of the Treasury — NOT an independent agency."
+      },
+      {
+        "Body": "Internal Revenue Service",
+        "Abbreviation": "IRS",
+        "Type": "Bureau of Treasury",
+        "Created By": "Revenue Act 1862",
+        "Jurisdiction": "Federal tax administration",
+        "Key Powers": "Tax treatment of all accounts, securities, and distributions",
+        "Common Exam Trap": "Sets retirement contribution limits, RMD ages, wash sale rules"
+      },
+      {
+        "Body": "New York Stock Exchange",
+        "Abbreviation": "NYSE",
+        "Type": "For-profit exchange / SRO",
+        "Created By": "Founded 1792; SRO under 1934 Act",
+        "Jurisdiction": "Listed equities on NYSE",
+        "Key Powers": "Lists securities; sets listing standards; SRO regulated by SEC",
+        "Common Exam Trap": "Largest US exchange by market cap. Both electronic and physical floor."
+      },
+      {
+        "Body": "Nasdaq Stock Market",
+        "Abbreviation": "Nasdaq",
+        "Type": "For-profit exchange / SRO",
+        "Created By": "Founded 1971",
+        "Jurisdiction": "Listed equities on Nasdaq",
+        "Key Powers": "Electronic exchange. Multiple tiers (Global Select, Global, Capital).",
+        "Common Exam Trap": "ALL-ELECTRONIC. No trading floor. Founded as a quotation system."
+      },
+      {
+        "Body": "Cboe Global Markets",
+        "Abbreviation": "Cboe",
+        "Type": "For-profit exchange / SRO",
+        "Created By": "Founded 1973 (as CBOE)",
+        "Jurisdiction": "Options exchange (and other products)",
+        "Key Powers": "Lists standardized options. Created listed options market.",
+        "Common Exam Trap": "Standardized contracts (100 shares, monthly expirations) date from 1973 CBOE launch."
+      },
+      {
+        "Body": "Options Clearing Corporation",
+        "Abbreviation": "OCC",
+        "Type": "Clearing house (industry-owned)",
+        "Created By": "Founded 1973",
+        "Jurisdiction": "Options clearing and guarantee",
+        "Key Powers": "Issues all listed options; guarantees performance; counterparty to every trade",
+        "Common Exam Trap": "OCC is the buyer to every seller and the seller to every buyer. You never face the original counterparty."
+      },
+      {
+        "Body": "Depository Trust and Clearing Corporation",
+        "Abbreviation": "DTCC",
+        "Type": "Industry-owned clearing entity",
+        "Created By": "Founded 1999 (consolidation)",
+        "Jurisdiction": "Post-trade processing and settlement",
+        "Key Powers": "Parent of NSCC, DTC, FICC. Processes virtually all US securities trades.",
+        "Common Exam Trap": "Holding company for the clearing infrastructure"
+      },
+      {
+        "Body": "National Securities Clearing Corporation",
+        "Abbreviation": "NSCC",
+        "Type": "DTCC subsidiary",
+        "Created By": "Founded 1976",
+        "Jurisdiction": "Clearing equities and corporate/muni bonds",
+        "Key Powers": "Nets trades for clearing; acts as central counterparty via novation",
+        "Common Exam Trap": "Reduces settlement complexity via netting"
+      },
+      {
+        "Body": "Public Company Accounting Oversight Board",
+        "Abbreviation": "PCAOB",
+        "Type": "Non-profit (SOX-created)",
+        "Created By": "Sarbanes-Oxley Act 2002",
+        "Jurisdiction": "Audits of public companies",
+        "Key Powers": "Sets audit standards for public-company auditors; inspects audit firms",
+        "Common Exam Trap": "Created in response to Enron/WorldCom. Oversees AUDITORS, not broker-dealers."
+      },
+      {
+        "Body": "Commodity Futures Trading Commission",
+        "Abbreviation": "CFTC",
+        "Type": "Federal agency",
+        "Created By": "Commodity Exchange Act 1936 (CFTC est. 1974)",
+        "Jurisdiction": "Commodity futures and derivatives markets",
+        "Key Powers": "Regulates futures, swaps, commodity options",
+        "Common Exam Trap": "Securities = SEC. Futures = CFTC. They're peer agencies, not nested."
+      },
+      {
+        "Body": "National Futures Association",
+        "Abbreviation": "NFA",
+        "Type": "SRO",
+        "Created By": "Founded 1976",
+        "Jurisdiction": "Commodity futures and forex industry",
+        "Key Powers": "Regulates FCMs, intro brokers, CPOs, CTAs",
+        "Common Exam Trap": "Futures industry SRO. Rarely on SIE but good to know exists."
+      }
+    ]
+  }
+}
