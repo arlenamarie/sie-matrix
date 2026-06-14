@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arlena's SIE Matrix — Relationship Map</title>
+
+<!-- ============================================================= -->
+<!--  HOW TO EDIT THIS MAP                                          -->
+<!--                                                                -->
+<!--  Scroll down to the block marked  ===== EDIT BELOW =====       -->
+<!--  Everything you change lives in ONE place: the GRAPH object.   -->
+<!--                                                                -->
+<!--  To add a NODE (a concept/body/rule), add a line to "nodes":   -->
+<!--     { "data": { "id": "short_id", "label": "What You See",      -->
+<!--                 "group": "concept" } },                         -->
+<!--                                                                 -->
+<!--  To add an EDGE (a connection), add a line to "edges":          -->
+<!--     { "data": { "source": "id_one", "target": "id_two",         -->
+<!--                 "label": "how they relate" } },                 -->
+<!--                                                                 -->
+<!--  RULES THAT KEEP IT FROM BREAKING:                              -->
+<!--   1. id must be unique, no spaces (use_underscores).            -->
+<!--   2. An edge's source and target must BOTH be real node ids.    -->
+<!--   3. Every line ends in a comma EXCEPT the last one in a list.  -->
+<!--   4. "group" can be: agency, sro, concept, product, exchange.   -->
+<!--      (color-coded for you — add your own groups if you want)    -->
+<!--   5. If the map goes blank, you broke the JSON. Paste the       -->
+<!--      GRAPH block into jsonlint.com to find the bad comma.       -->
+<!-- ============================================================= -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg:        #F2EEE3;
+    --ink:       #1A1614;
+    --maroon:    #6E2233;
+    --line:      #D8CFBE;
+    --card:      #FAF7EF;
+    --muted:     #8A8276;
+
+    /* node group colors */
+    --c-agency:   #6E2233;
+    --c-sro:      #2F5A52;
+    --c-concept:  #A8632A;
+    --c-product:  #3A4A6B;
+    --c-exchange: #715C8C;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body { height: 100%; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  header {
+    padding: 18px 22px 14px;
+    border-bottom: 1px solid var(--line);
+    background: var(--bg);
+    flex: 0 0 auto;
+  }
+
+  h1 {
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  h1 em { color: var(--maroon); font-style: italic; }
+
+  .sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 5px;
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    margin-top: 12px;
+  }
+  .legend span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+  #cy {
+    flex: 1 1 auto;
+    width: 100%;
+    background:
+      radial-gradient(circle at 1px 1px, rgba(0,0,0,0.05) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+
+  .hint {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    padding: 9px 16px;
+    background: var(--card);
+    border-top: 1px solid var(--line);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.64rem;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  @media (max-width: 560px) {
+    h1 { font-size: 1.3rem; }
+    .legend { gap: 8px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Arlena's <em>SIE</em> Relationship Map</h1>
+  <div class="sub">Personal Reference · 2026 · Built While Studying</div>
+  <div class="legend">
+    <span><i class="dot" style="background:var(--c-agency)"></i>Federal Agency</span>
+    <span><i class="dot" style="background:var(--c-sro)"></i>SRO</span>
+    <span><i class="dot" style="background:var(--c-concept)"></i>Concept</span>
+    <span><i class="dot" style="background:var(--c-product)"></i>Product</span>
+    <span><i class="dot" style="background:var(--c-exchange)"></i>Exchange / Clearing</span>
+  </div>
+</header>
+
+<div id="cy"></div>
+
+<div class="hint">Drag nodes to rearrange · pinch / scroll to zoom · tap a node to focus its connections</div>
+
+<script>
+// ============================================================= //
+// =====================  EDIT BELOW  ========================== //
+//  This is the only block you touch. Add nodes and edges here.   //
+//  See the comment at the top of the file for the rules.         //
+// ============================================================= //
+
+const GRAPH = {
+  "nodes": [
+
+    /* ---- Federal Agencies (group: agency) ---- */
+    { "data": { "id": "sec",      "label": "SEC",      "group": "agency" } },
+    { "data": { "id": "fdic",     "label": "FDIC",     "group": "agency" } },
+    { "data": { "id": "frb",      "label": "Federal Reserve (Fed)", "group": "agency" } },
+    { "data": { "id": "treasury", "label": "U.S. Treasury", "group": "agency" } },
+    { "data": { "id": "cftc",     "label": "CFTC",     "group": "agency" } },
+
+    /* ---- Treasury bureaus (group: agency) ---- */
+    { "data": { "id": "fincen",   "label": "FinCEN",   "group": "agency" } },
+    { "data": { "id": "irs",      "label": "IRS",      "group": "agency" } },
+
+    /* ---- SROs (group: sro) ---- */
+    { "data": { "id": "finra",    "label": "FINRA",    "group": "sro" } },
+    { "data": { "id": "msrb",     "label": "MSRB",     "group": "sro" } },
+    { "data": { "id": "nfa",      "label": "NFA",      "group": "sro" } },
+
+    /* ---- Investor protection (group: sro) ---- */
+    { "data": { "id": "sipc",     "label": "SIPC",     "group": "sro" } },
+    { "data": { "id": "pcaob",    "label": "PCAOB",    "group": "sro" } },
+
+    /* ---- Exchanges & clearing (group: exchange) ---- */
+    { "data": { "id": "nyse",     "label": "NYSE",     "group": "exchange" } },
+    { "data": { "id": "nasdaq",   "label": "Nasdaq",   "group": "exchange" } },
+    { "data": { "id": "cboe",     "label": "Cboe",     "group": "exchange" } },
+    { "data": { "id": "occ",      "label": "OCC",      "group": "exchange" } },
+    { "data": { "id": "dtcc",     "label": "DTCC",     "group": "exchange" } },
+    { "data": { "id": "nscc",     "label": "NSCC",     "group": "exchange" } },
+
+    /* ---- Chapter 1: Common Stock + Voting (group: product / concept) ---- */
+    { "data": { "id": "common_stock",     "label": "Common Stock",     "group": "product" } },
+    { "data": { "id": "voting_rights",    "label": "Voting Rights",    "group": "concept" } },
+    { "data": { "id": "statutory",        "label": "Statutory Voting", "group": "concept" } },
+    { "data": { "id": "cumulative",       "label": "Cumulative Voting","group": "concept" } },
+    { "data": { "id": "minority_holders", "label": "Minority Holders", "group": "concept" } }
+
+  ],
+
+  "edges": [
+
+    /* ---- who oversees / reports to whom ---- */
+    { "data": { "source": "sec",   "target": "finra", "label": "oversees" } },
+    { "data": { "source": "sec",   "target": "msrb",  "label": "oversees" } },
+    { "data": { "source": "msrb",  "target": "finra", "label": "FINRA enforces its rules" } },
+    { "data": { "source": "treasury", "target": "fincen", "label": "bureau of" } },
+    { "data": { "source": "treasury", "target": "irs",    "label": "bureau of" } },
+    { "data": { "source": "cftc",  "target": "nfa",   "label": "oversees" } },
+
+    /* ---- exchanges & clearing are SEC-regulated SROs ---- */
+    { "data": { "source": "sec", "target": "nyse",   "label": "regulates (SRO)" } },
+    { "data": { "source": "sec", "target": "nasdaq", "label": "regulates (SRO)" } },
+    { "data": { "source": "sec", "target": "cboe",   "label": "regulates (SRO)" } },
+    { "data": { "source": "dtcc", "target": "nscc",  "label": "parent of" } },
+    { "data": { "source": "cboe", "target": "occ",   "label": "options clear via" } },
+
+    /* ---- margin authority ---- */
+    { "data": { "source": "frb",  "target": "finra", "label": "Fed sets Reg T, FINRA sets maintenance" } },
+
+    /* ---- chapter 1: voting ---- */
+    { "data": { "source": "common_stock",  "target": "voting_rights", "label": "grants" } },
+    { "data": { "source": "voting_rights", "target": "statutory",     "label": "method" } },
+    { "data": { "source": "voting_rights", "target": "cumulative",    "label": "method" } },
+    { "data": { "source": "cumulative",    "target": "minority_holders", "label": "favors" } }
+
+  ]
+};
+
+// ============================================================= //
+// =====================  EDIT ABOVE  ========================== //
+//  You shouldn't need to touch anything below this line.         //
+// ============================================================= //
+
+const groupColor = {
+  agency:   getCSS('--c-agency'),
+  sro:      getCSS('--c-sro'),
+  concept:  getCSS('--c-concept'),
+  product:  getCSS('--c-product'),
+  exchange: getCSS('--c-exchange')
+};
+function getCSS(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+
+const cy = cytoscape({
+  container: document.getElementById('cy'),
+  elements: GRAPH,
+  layout: {
+    name: 'cose',
+    animate: true,
+    animationDuration: 700,
+    nodeRepulsion: 9000,
+    idealEdgeLength: 120,
+    padding: 40
+  },
+  style: [
+    {
+      selector: 'node',
+      style: {
+        'background-color': ele => groupColor[ele.data('group')] || '#555',
+        'label': 'data(label)',
+        'color': '#1A1614',
+        'font-family': 'Inter, sans-serif',
+        'font-size': '12px',
+        'font-weight': 500,
+        'text-valign': 'bottom',
+        'text-margin-y': 6,
+        'text-wrap': 'wrap',
+        'text-max-width': '110px',
+        'width': 26,
+        'height': 26,
+        'border-width': 2,
+        'border-color': '#FAF7EF',
+        'overlay-opacity': 0
+      }
+    },
+    {
+      selector: 'edge',
+      style: {
+        'width': 1.5,
+        'line-color': '#C7BCA8',
+        'target-arrow-color': '#C7BCA8',
+        'target-arrow-shape': 'triangle',
+        'arrow-scale': 0.9,
+        'curve-style': 'bezier',
+        'label': 'data(label)',
+        'font-family': 'JetBrains Mono, monospace',
+        'font-size': '8px',
+        'color': '#8A8276',
+        'text-rotation': 'autorotate',
+        'text-background-color': '#F2EEE3',
+        'text-background-opacity': 0.85,
+        'text-background-padding': 2
+      }
+    },
+    {
+      selector: '.faded',
+      style: { 'opacity': 0.12 }
+    },
+    {
+      selector: '.highlight',
+      style: { 'line-color': '#6E2233', 'target-arrow-color': '#6E2233', 'width': 2.5 }
+    },
+    {
+      selector: 'node.highlight',
+      style: { 'border-color': '#6E2233', 'border-width': 3 }
+    }
+  ]
+});
+
+// tap a node to focus its neighborhood; tap background to reset
+cy.on('tap', 'node', evt => {
+  const node = evt.target;
+  const hood = node.closedNeighborhood();
+  cy.elements().addClass('faded');
+  hood.removeClass('faded').addClass('highlight');
+  node.removeClass('faded');
+});
+cy.on('tap', evt => {
+  if (evt.target === cy) {
+    cy.elements().removeClass('faded highlight');
+  }
+});
+</script>
+
+</body>
+</html>
