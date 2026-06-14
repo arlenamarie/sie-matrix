@@ -23,7 +23,7 @@
         "Settlement": "T+1",
         "Key Reg / Act": "Securities Act 1933 (issue); Exchange Act 1934 (trading)",
         "Trading Venue": "Exchange or OTC",
-        "Notes / Mnemonics": "Voting rights. Last in line at liquidation. No maturity."
+        "Notes / Mnemonics": "Voting rights (statutory or cumulative). Last in line at liquidation. No maturity.",         "Voting Detail": "STATUTORY: votes locked in equal buckets per seat, favors large holders. CUMULATIVE: total votes (shares x seats) poured anywhere, favors minority holders." 
       },
       {
         "Product Name": "Preferred Stock",
