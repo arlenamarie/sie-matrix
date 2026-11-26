@@ -2,6 +2,7 @@
 
 These apply to everything you write for me, in every project.
 
+<!-- BEGIN GENERATED: standing-instructions -->
 ## Writing
 
 - Never use em dashes. Use commas, parentheses, semicolons, or separate
@@ -31,3 +32,4 @@ These apply to everything you write for me, in every project.
   and binaries need ARM64 builds, not x64.
 - I also work from a separate machine, so anything you set up should be
   portable between the two.
+<!-- END GENERATED: standing-instructions -->
